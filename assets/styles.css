@@ -1,0 +1,147 @@
+:root {
+    --bs-primary: #4c6a9c !important;
+    --bs-primary-rgb: 76, 106, 156 !important;
+}
+
+a.nav-link {
+    color: white !important;
+}
+
+.sidebar {
+    margin-top: -2.5rem;
+    padding: 0 10px;
+    height: 100vh;
+    width: 295px;
+    text-align: center;
+    position: fixed;
+    border-right: lightgray 1px solid;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-content h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    /*border-bottom: lightgray 2px solid;*/
+}
+
+.sidebar-subtitle {
+    margin: 10px;
+    padding: 5px 0;
+    border-bottom: lightgray 2px solid;
+}
+
+.icon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#page-1-date-picker-single,
+#page-1-date-picker-single {
+    margin-bottom: 5px;
+}
+
+
+/* Pour avoir un joli multi-select pas trop grand */
+#page-1-dropdown .Select-multi-value-wrapper {
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+#page-1-dropdown .Select-multi-value-wrapper .Select-value {
+    font-size: 0.75em;
+}
+
+#page-1-display-map {
+    margin-right: -50px;
+}
+
+.content-grid {
+    flex-basis: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.home-content {
+    margin: 0 72px;
+    text-align: justify;
+    margin-bottom: 12rem;
+}
+
+.predictions.content-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content 1fr 1fr;
+    grid-template-areas:
+        "Title Title Title Title"
+        "Plot1 Plot1 Plot2 Plot2"
+        "Plot3 Plot3 Description Description";
+    grid-gap: 10px;
+}
+.predictions.content-grid h2 {
+    text-align: center;
+}
+
+.home-grid {
+    flex-basis: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5%;
+}
+
+figure.note {
+    color: var(--bs-primary);
+    border-left: var(--bs-primary) 3px solid;
+    padding: 0 1em !important;
+    margin: 1em;
+    margin-left: 0.45em;
+}
+
+.blockquote {
+    margin: 0 !important;
+}
+
+.home-sources a {
+    margin-bottom: 0.5em;
+}
+
+.content {
+    margin: 0 72px;
+    margin-top: -2.5rem;
+    width: 100vw;
+}
+
+
+.sidebar-left.content {
+    margin-left: 315px;
+    width: calc(100vw - 315px);
+}
+
+@media screen and (max-width: 1250px) {
+    .content {
+        zoom: 65%;
+        width: 100vw;
+    }
+
+    .sidebar-left.content {
+        margin-left: calc(315px * 100 / 65);
+        width: calc(100vw - (315px * 100 / 65));
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .content {
+        zoom: 80%;
+        width: 100vw;
+    }
+
+    .sidebar-left.content {
+        margin-left: calc(315px * 100 / 80);
+        width: calc(100vw - (315px * 100 / 80));
+    }
+}
