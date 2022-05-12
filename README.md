@@ -1,21 +1,28 @@
-# Projet Blanc CentraleDigitalLab - Team 1
+# Projet Blanc CentraleDigitalLab (3 days) - Team 1: 3 members
 
 ## Execute project
+
 ### Requirements
 
-Listed in `requirements.txt` in a conda environement including `plotly`,`numpy`,`pandas`
+Listed in `requirements.txt` in a conda/virtualenv environement including `plotly`,`numpy`,`pandas`, etc
 
     $ pip install requirements.txt
 
 ### Launch
-    $ python index.js
+
+    $ python app.py
 
 ## Directories
+
 ### assets
+
 Loaded by default by Dash, include CSS, JS and external ressources of the app
 
 ### components
+
 Various Dash common HTML components
 
 ### preprocess
-Loading raw dataframes tasks
+
+Web scrapping
+Loading raw dataframes
