@@ -65,7 +65,6 @@ sympy==1.9
 tenacity==8.0.1
 threadpoolctl==3.1.0
 tornado==6.1
-#tk==0.1.0
 traitlets==5.1.1
 urllib3==1.26.8
 virtualenv==20.14.1
