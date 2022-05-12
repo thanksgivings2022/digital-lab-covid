@@ -1,4 +1,4 @@
-from tkinter.ttk import Style
+#from tkinter.ttk import Style
 from dash import html,dcc
 import dash_daq as daq
 
